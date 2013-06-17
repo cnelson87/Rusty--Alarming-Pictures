@@ -1,0 +1,279 @@
+
+/*	-----------------------------------------------
+
+	iOS
+
+	----------------------------------------------- */
+
+/**
+*	iPad - Landscape
+**/
+
+@media only screen and (max-device-width: 1024px) {}
+@media only screen and (max-width: 1024px) {
+
+}
+
+/*** /iPad ***/
+
+
+/**
+*	iPad - Portrait
+**/
+
+@media only screen and (max-device-width: 768px) {}
+@media only screen and (max-width: 768px) {
+
+	#wrapper {
+		width: 752px;
+		min-width: 752px;
+	}
+	#header {
+		background-position: left top;
+	}
+		a#logo {
+			left: 24px;
+		}
+		#footer .footer-inner {
+			height: 244px;
+		}
+		#footer p {
+			line-height: 16px;
+			width: 60%;
+			top: 40px;
+		}
+		#header .header-inner,
+		#footer .footer-inner,
+		#main .main-inner {
+			width: 752px;
+		}
+		#main .twocols #content {
+			width: 496px;
+		}
+		#main .twocols #subcol {
+			width: 240px;
+		}
+
+	img.hero {
+		width: 484px;
+		height: auto;
+		border: 6px solid #fff;
+		margin: 0 0 20px 0;
+	}
+
+	ul.thumbs-list {
+		width: 100%;
+		min-height: 135px;
+	}
+	.twocols ul.thumbs-list {
+		width: 100%;
+	}
+		ul.thumbs-list > li {
+			width: 240px;
+			min-height: 135px;
+			margin: 0 0 0 16px;
+		}
+		ul.thumbs-list > li:first-child {
+			margin: 0;
+		}
+		ul.thumbs-list img {
+			width: 232px;
+			height: 127px;
+			border: 4px solid #fff;
+		}
+
+		#subcol ul, #subcol ol, #subcol dl, #subcol dl dd {
+			width: 240px;
+		}
+
+	/**
+	*	hero-tabs
+	**/
+
+	div.hero-tabs {
+		width: 740px;
+		height: 356px;
+		border: 6px solid #fff;
+	}
+		.hero-tabs .tab-nav {
+			bottom: 32px;
+		}
+
+	/*** /hero-tabs ***/
+
+	/**
+	*	modal-window
+	**/
+
+	div.modal-window,
+	div.modal-image,
+	div.modal-video {
+		width: 740px;
+		height: 356px;
+		padding: 6px;
+	}
+
+	/*** /modal-window ***/
+
+
+}
+
+/*** /iPad ***/
+
+
+/**
+*	iPhone
+**/
+
+/*
+@media only screen and (max-device-width: 480px), only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
+*/
+@media only screen and (max-width: 480px) {
+/*
+	html, body, #wrapper {
+		max-width: 480px;
+	}
+*/
+	#wrapper {
+		max-width: 480px;
+	}
+
+	#header, #footer, #main {
+		min-width: 320px;
+	}
+		#header .header-inner,
+		#footer .footer-inner,
+		#main .main-inner {
+			width: 280px;
+		}
+		#main #content {
+			width: 280px;
+		}
+		#main .twocols #content,
+		#main .twocols #subcol {
+			float: none;
+			width: 230px;
+		}
+/*
+		#mainnav {}
+			#mainnav ul {
+				font-size: 20px;
+				line-height: 22px;
+			}
+			#mainnav li {
+				margin: 0 8px;
+			}
+*/
+
+	h1 {
+		font-size: 30px;
+		line-height: 34px;
+	}
+	h2, .h2 {
+		font-size: 24px;
+		line-height: 26px;
+		padding-top: 16px;
+	}
+	h3, .h3 {
+		font-size: 18px;
+		line-height: 20px;
+	}
+
+	ul.thumbs-list {
+		list-style: none;
+		width: 306px;
+		margin: 0 -13px 20px -13px;
+	}
+		ul.thumbs-list li {
+			float: none;
+			display: block;
+			width: 306px;
+			height: 172px;
+			margin: 0 0 10px 0;
+		}
+
+	/* /hero-tabs */
+
+	div.hero-tabs {
+		width: 306px;
+		height: 172px;
+		border: 7px solid #fff;
+		margin: 0 -13px 20px -13px;
+	}
+		.hero-tabs .tab-panels {
+			width: 306px;
+			height: 172px;
+		}
+			.hero-tabs .tab-panels ul {
+				width: 306px;
+				height: 172px;
+			}
+			.hero-tabs .tab-panels li {
+				width: 306px;
+				height: 172px;
+			}
+				.hero-tabs .tab-panels img {
+					width: 306px;
+					height: 172px;
+				}
+		.hero-tabs .tab-nav {
+			width: 306px;
+			bottom: 20px;
+		}
+
+	/* /hero-tabs */
+
+	/* modalwindow */
+
+	div.modalwindow {
+		width: 306px;
+		padding: 7px;
+		position: absolute;
+	}
+		div.modalwindow div.modalwindow-content {
+			min-height: 2000px;
+			padding: 0;
+		}
+
+	/* /modalwindow */
+
+	/*** /modal-image ***/
+
+	div.modal-image {
+		width: 306px;
+		height: 172px;
+		padding: 7px;
+	}
+		div.modal-image div.modal-image-content {
+			width: 306px;
+			height: 172px;
+		}
+		div.modal-image div.modal-image-content img {
+			display: block;
+			width: 306px;
+			height: 172px;
+		}
+
+	/*** modal-image ***/
+
+	/*** /modal-iframe ***/
+
+	div.modal-iframe {
+		width: 306px;
+		height: 172px;
+		padding: 7px;
+	}
+		div.modal-iframe div.modaliframe-content {
+			width: 306px;
+			height: 172px;
+		}
+		div.modal-iframe div.modaliframe-content iframe {
+			width: 306px;
+			height: 172px;
+		}
+
+	/*** modal-iframe ***/
+
+}
+
+/*** /iPhone ***/
