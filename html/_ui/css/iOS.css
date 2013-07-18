@@ -6,23 +6,10 @@
 	----------------------------------------------- */
 
 /**
-*	iPad - Landscape
+*	iPad
 **/
 
-@media only screen and (max-device-width: 1024px) {}
-@media only screen and (max-width: 1024px) {
-
-}
-
-/*** /iPad ***/
-
-
-/**
-*	iPad - Portrait
-**/
-
-@media only screen and (max-device-width: 768px) {}
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 960px) {
 
 	#wrapper {
 		width: 752px;
@@ -31,28 +18,31 @@
 	#header {
 		background-position: left top;
 	}
-		a#logo {
-			left: 24px;
-		}
-		#footer .footer-inner {
-			height: 244px;
-		}
-		#footer p {
-			line-height: 16px;
-			width: 60%;
-			top: 40px;
-		}
-		#header .header-inner,
-		#footer .footer-inner,
-		#main .main-inner {
-			width: 752px;
-		}
-		#main .twocols #content {
-			width: 496px;
-		}
-		#main .twocols #subcol {
-			width: 240px;
-		}
+	a#logo {
+		left: 24px;
+	}
+	a#logo-sm {
+		right: 24px;
+	}
+	#footer .footer-inner {
+		height: 244px;
+	}
+	#footer p {
+		line-height: 16px;
+		width: 60%;
+		top: 40px;
+	}
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 752px;
+	}
+	#main .twocols #content {
+		width: 496px;
+	}
+	#main .twocols #subcol {
+		width: 240px;
+	}
 
 	img.hero {
 		width: 484px;
@@ -129,41 +119,113 @@
 @media only screen and (max-device-width: 480px), only screen and (min-device-width: 640px) and (max-device-width: 1136px) and (-webkit-min-device-pixel-ratio: 2) {
 */
 @media only screen and (max-width: 480px) {
+
+	.hidden-desktop {
+		display: block;
+		visibility: visible;
+	}
+	.visible-desktop {
+		display: none;
+		visibility: hidden;
+	}
+	.visible-mobile {
+		display: block;
+		visibility: visible;
+	}
+	.visible-mobile.inline {
+		display: inline;
+	}
+	.visible-mobile.inline-block {
+		display: inline-block;
+	}
+	.hidden-mobile {
+		display: none;
+		visibility: hidden;
+	}
+
 /*
 	html, body, #wrapper {
 		max-width: 480px;
 	}
 */
 	#wrapper {
-		max-width: 480px;
+		width: 320px;
+		min-width: 320px;
+		padding-top: 0;
+	}
+	#header {
+		background-image: url('../img/_chrome/bg-header-mobi.png');
+	}
+	#header .header-inner {
+		height: 78px;
+	}
+	a#logo {
+		width: 240px;
+		height: 38px;
+		background: none;
+		left: 40px;
+		top: 9px;
+	}
+	#footer {
+		background-image: url('../img/_chrome/bg-footer-mobi.png');
+	}
+	#footer .footer-inner {
+		height: 106px;
+	}
+	a#logo-sm {
+		width: 181px;
+		height: 40px;
+		background: none;
+		right: 68px;
+		top: 39px;
+	}
+	#footer p {
+		color: #ae9789;
+		line-height: 16px;
+		width: 60%;
+		top: 70px;
+		display: none;
+	}
+	#header .header-inner,
+	#footer .footer-inner,
+	#main .main-inner {
+		width: 320px;
+	}
+	#main #content {
+		width: 304px;
+		margin: 0 auto;
+	}
+	#main .twocols #content,
+	#main .twocols #subcol {
+		float: none;
+		width: 304px;
+		margin: 0 auto;
 	}
 
-	#header, #footer, #main {
-		min-width: 320px;
+	#mainnav {
+		width: 100%;
+		height: 18px;
+		text-align: center;
+		left: 0;
+		right: 0;
+		top: 48px;
 	}
-		#header .header-inner,
-		#footer .footer-inner,
-		#main .main-inner {
-			width: 280px;
+		#mainnav ul {
+			display: inline-block;
+			font-size: 14px;
+			line-height: 18px;
+			margin: 0 auto;
 		}
-		#main #content {
-			width: 280px;
+		#mainnav li {
+			height: 18px;
+			margin: 0 16px;
 		}
-		#main .twocols #content,
-		#main .twocols #subcol {
-			float: none;
-			width: 230px;
-		}
-/*
-		#mainnav {}
-			#mainnav ul {
-				font-size: 20px;
-				line-height: 22px;
-			}
-			#mainnav li {
-				margin: 0 8px;
-			}
-*/
+
+	img.hero {
+		width: 308px;
+		height: auto;
+		margin: 0 -8px 20px -8px;
+	}
 
 	h1 {
 		font-size: 30px;
@@ -179,18 +241,24 @@
 		line-height: 20px;
 	}
 
-	ul.thumbs-list {
-		list-style: none;
-		width: 306px;
-		margin: 0 -13px 20px -13px;
-	}
-		ul.thumbs-list li {
+	ul.thumbs-list {}
+		ul.thumbs-list > li {
 			float: none;
 			display: block;
-			width: 306px;
-			height: 172px;
-			margin: 0 0 10px 0;
+			width: 100%;
+			min-height: auto;
+			margin: 20px 0 0 0;
 		}
+		ul.thumbs-list > li:first-child {
+			margin: 0;
+		}
+		ul.thumbs-list img {
+			width: 294px;
+			height: auto;
+			border: 4px solid #fff;
+		}
+
+
 
 	/* /hero-tabs */
 

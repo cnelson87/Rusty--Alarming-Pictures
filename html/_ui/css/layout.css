@@ -24,7 +24,7 @@
 
 #header {
 	width: 100%;
-	background: transparent url('../img/_chrome/bg-header.jpg') no-repeat center top;
+	background: transparent url('../img/_chrome/bg-header.png') no-repeat center top;
 }
 	#header .header-inner {
 		width: 960px;
@@ -90,6 +90,19 @@
 		height: 424px;
 		margin: 0 auto;
 		position: relative;
+	}
+
+	a#logo-sm {
+		display: block;
+		overflow: hidden;
+		text-indent: 200%;
+		white-space: nowrap;
+		width: 181px;
+		height: 40px;
+		background: transparent url('../img/_chrome/logo-sm.png') no-repeat 0 0;
+		position: absolute;
+		right: 98px;
+		top: 154px;
 	}
 
 	#footer p {

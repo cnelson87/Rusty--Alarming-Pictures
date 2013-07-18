@@ -12,6 +12,29 @@
 html.no-js .hide-no-js {display: none;}
 html.js-enabled .hide-js-enabled {display: none;}
 
+.hidden-desktop {
+	display: none;
+	visibility: hidden;
+}
+.visible-desktop {
+	display: block;
+	visibility: visible;
+}
+.visible-desktop.inline {
+	display: inline;
+}
+.visible-desktop.inline-block {
+	display: inline-block;
+}
+.visible-mobile {
+	display: none;
+	visibility: hidden;
+}
+.hidden-mobile {
+	display: block;
+	visibility: visible;
+}
+
 big, .big {font-size: 16px;}
 
 small, .small, .note {font-size: 10px;}
