@@ -96,10 +96,14 @@
 	**/
 
 	div.modal-window,
-	div.modal-image,
-	div.modal-video {
+	div.modal-image {
 		width: 740px;
 		height: 356px;
+		padding: 6px;
+	}
+	div.modal-video {
+		width: 720px;
+		height: 400px;
 		padding: 6px;
 	}
 
@@ -291,56 +295,23 @@
 
 	/* /hero-tabs */
 
-	/* modalwindow */
+	/**
+	*	modal-window
+	**/
 
-	div.modalwindow {
-		width: 306px;
-		padding: 7px;
-		position: absolute;
-	}
-		div.modalwindow div.modalwindow-content {
-			min-height: 2000px;
-			padding: 0;
-		}
-
-	/* /modalwindow */
-
-	/*** /modal-image ***/
-
+	div.modal-window,
 	div.modal-image {
 		width: 306px;
-		height: 172px;
-		padding: 7px;
+		height: 148px;
+		padding: 4px;
 	}
-		div.modal-image div.modal-image-content {
-			width: 306px;
-			height: 172px;
-		}
-		div.modal-image div.modal-image-content img {
-			display: block;
-			width: 306px;
-			height: 172px;
-		}
-
-	/*** modal-image ***/
-
-	/*** /modal-iframe ***/
-
-	div.modal-iframe {
+	div.modal-video {
 		width: 306px;
 		height: 172px;
-		padding: 7px;
+		padding: 4px;
 	}
-		div.modal-iframe div.modaliframe-content {
-			width: 306px;
-			height: 172px;
-		}
-		div.modal-iframe div.modaliframe-content iframe {
-			width: 306px;
-			height: 172px;
-		}
 
-	/*** modal-iframe ***/
+	/*** /modal-window ***/
 
 }
 
